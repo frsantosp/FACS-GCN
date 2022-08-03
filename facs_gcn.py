@@ -78,7 +78,7 @@ if __name__ == "__main__":
             h = delta * torch.log(preds)
 
             adv_model = adv(h.detach(),adj)
-            adv_loss_temp = F.nll_loss(adv_model[train_mask],labels[train_mask],reduction='sum')
+            adv_loss_temp = F.nll_loss(adv_model[train_mask],gender[train_mask],reduction='sum')
 
             loss = ((1-alpha)*loss-(alpha*adv_loss_temp.detach())) + reg_lambda / 2 * l2_reg
             loss.backward()
@@ -87,7 +87,7 @@ if __name__ == "__main__":
             adv.requires_grad_(True)
             optimizer_adv.zero_grad()
             adv_model = adv(h.detach(), adj)
-            adv_loss = F.nll_loss(adv_model[train_mask], labels[train_mask], reduction='sum')
+            adv_loss = F.nll_loss(adv_model[train_mask], gender[train_mask], reduction='sum')
             adv_loss.backward()
             optimizer_adv.step()
 
