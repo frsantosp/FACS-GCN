@@ -12,5 +12,5 @@ The main scripts to run FACS-GCN is facs_gcn.py. The code containing the model c
 
 An example to run the model:
 
-'python facs_gcn.py --dataset_str facebook --lr 0.001 --reward_class_2 2.0 --epoch 500
-'
+`python facs_gcn.py --dataset_str facebook --lr 0.001 --reward_class_2 2.0 --epoch 500
+`
