@@ -14,3 +14,5 @@ An example to run the model:
 
 `python facs_gcn.py --dataset_str facebook --lr 0.001 --reward_class_2 2.0 --epoch 500
 `
+## 3. Questions?
+If you have questions/suggestions, please feel free to santosf3 @ msu dot edu
