@@ -8,7 +8,7 @@ Preprocessed datasets are contained in the Data folder. Raw data are in Dataset 
 
 ## 2. Usage
 
-The main scripts to run FACS-GCN is facs_gcn.py. The code containing the model can be found in facs_model.py. The implementation usage PyTorch. 
+The main scripts to run FACS-GCN is facs_gcn.py. The code containing the model can be found in facs_model.py. The implementation uses PyTorch. 
 
 An example to run the model:
 
